@@ -1,0 +1,15 @@
+<!-- BEGIN SMARTPHONE -->
+<section id="smartphone" class="container-fluid pt-5 pb-5">
+  <h1 class="text-white text-center">BEST SMARTPHONE</h1>
+  <div [class]="'row'" >
+    <app-item-procduct-component 
+      *ngFor="let item of listSmartPhone" 
+      name={{item.name}}  
+      descrip ={{item.descrip}}
+      imgurl = {{item.url}}
+    >
+
+    </app-item-procduct-component>
+  </div>
+</section>
+<!-- END SMARTPHONE -->
